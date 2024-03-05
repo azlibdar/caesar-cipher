@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="view">
+            <div class="area">
+                <span class="headline">Sender</span>
+                <div class="controls">
+                    <input id="encryptKey" type="number" placeholder="Encypt key" value="">
+                    <input id="inputMsg" type="text" placeholder="Enter text...">
+                </div>
+            </div>
+            <div class="area">
+                <span class="headline">Receiver</span>
+                <div class="controls">
+                    <input id="decryptKey" type="number" placeholder="Decrypt key" value="1">
+                    <input id="outputMsg" type="text" readonly placeholder="Waiting for message...">
+                </div>
+            </div>
+        </div>
+        <div class="abstract">
+            <p id="encryptedMsg"></p>
+        </div>
+    </main>
+
+    <!-- Scripting -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
