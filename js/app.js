@@ -32,14 +32,14 @@ function updateOutput() {
 
 function encrypt(msg, key) {
 
-    key %= 128
+    key %= 65535
     let encryptedText = "";
 
     for (let x = 0; x < msg.length; x++) {
         let asciiOfX = msg.charCodeAt(x);
 
 
-        let nextAsciiOfX = (asciiOfX  + key) % 128;
+        let nextAsciiOfX = (asciiOfX  + key) % 65535;
 
         let encryptedX = String.fromCharCode(nextAsciiOfX);
 
@@ -52,13 +52,13 @@ function encrypt(msg, key) {
 }
 
 function decrypt(msg, key) {
-    key %= 128
+    key %= 65535
     let decryptedText = "";
 
     for (let x = 0; x < msg.length; x++) {
         let asciiOfX = msg.charCodeAt(x);
 
-        let prevAsciiOfX = (128 + asciiOfX - key) % 128;
+        let prevAsciiOfX = (asciiOfX - key) % 65535;
 
         let decryptedX = String.fromCharCode(prevAsciiOfX);
 

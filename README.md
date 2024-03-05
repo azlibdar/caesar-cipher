@@ -7,7 +7,7 @@ Welcome to the Caesar Cipher repository! This webpage allows you to encrypt and 
 - Decrypt messages with a specified decryption key.
 - Real-time updates as you type.
 - Preserves spaces in the message.
-- Supports the entire range of characters from the ASCII character set.
+- Supports the entire range of characters from the UTF-16 character set.
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug fixes, or feature requests, feel free to open an issue or submit a pull request.
