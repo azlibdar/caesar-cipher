@@ -31,6 +31,8 @@ function updateOutput() {
 }
 
 function encrypt(msg, key) {
+
+    key %= 128
     let encryptedText = "";
 
     for (let x = 0; x < msg.length; x++) {
@@ -50,6 +52,7 @@ function encrypt(msg, key) {
 }
 
 function decrypt(msg, key) {
+    key %= 128
     let decryptedText = "";
 
     for (let x = 0; x < msg.length; x++) {
